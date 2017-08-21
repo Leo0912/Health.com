@@ -1,0 +1,212 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite guice-stage="DEVELOPMENT" name="TAAutomation" parallel="tests"
+	thread-count="11">
+	<!--<suite name="Sample Run" verbose="1" parallel="methods" thread-count="2" 
+		data-provider-thread-count="3"> -->
+	<listeners>
+		<listener class-name="UtilityFunctions.WebDriverListener"></listener>
+	</listeners>
+	<!-- <test name="SampleTestpack"> <parameter name="browserName" value="chrome"></parameter> 
+		<parameter name="filePath" value="C:\\Users\\ojhap\\workspace\\HAAutomation_Solution\\TestData_InputExcelFile"></parameter> 
+		<parameter name="fileName" value="kishore.xlsx"></parameter> <parameter name="sheetName" 
+		value="TopPerf"></parameter> <classes> <class name="TestCode.DemoTestNG"/> 
+		<class name="TestCode.GiftLinksCheck"> <methods> <include name="TopPerf" 
+		/> </methods> </class> </classes> </test> -->
+
+	<test name="Test_1">
+
+		<parameter name="browserName" value="chrome"></parameter>
+		<parameter name="fileName" value="Test_3.xlsx"></parameter>
+		<parameter name="sheetName" value="TopPerf"></parameter>
+		<classes>
+			<!-- <class name="TestCode.DemoTestNG"/> -->
+			<class name="TestCode.GiftLinksCheck">
+				<methods>
+					<include name="TopPerf" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+<!-- 
+	<test name="Test_2">
+
+		<parameter name="browserName" value="chrome"></parameter>
+		<parameter name="filePath"
+			value="C:\\Users\\ojhap\\workspace\\HAAutomation_Solution\\TestData_InputExcelFile"></parameter>
+		<parameter name="fileName" value="Test_2.xlsx"></parameter>
+		<parameter name="sheetName" value="TopPerf"></parameter>
+		<classes>
+			<class name="TestCode.DemoTestNG"/>
+			<class name="TestCode.GiftLinksCheck">
+				<methods>
+					<include name="TopPerf" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+	<test name="Test_3">
+
+		<parameter name="browserName" value="chrome"></parameter>
+		<parameter name="filePath"
+			value="C:\\Users\\ojhap\\workspace\\HAAutomation_Solution\\TestData_InputExcelFile"></parameter>
+		<parameter name="fileName" value="Test_3.xlsx"></parameter>
+		<parameter name="sheetName" value="TopPerf"></parameter>
+		<classes>
+			<class name="TestCode.DemoTestNG" />
+			<class name="TestCode.GiftLinksCheck">
+				<methods>
+					<include name="TopPerf" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+	<test name="Test_4">
+
+		<parameter name="browserName" value="chrome"></parameter>
+		<parameter name="filePath"
+			value="C:\\Users\\ojhap\\workspace\\HAAutomation_Solution\\TestData_InputExcelFile"></parameter>
+		<parameter name="fileName" value="Test_4.xlsx"></parameter>
+		<parameter name="sheetName" value="TopPerf"></parameter>
+		<classes>
+			<class name="TestCode.DemoTestNG" />
+			<class name="TestCode.GiftLinksCheck">
+				<methods>
+					<include name="TopPerf" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+	<test name="Test_5">
+
+		<parameter name="browserName" value="chrome"></parameter>
+		<parameter name="filePath"
+			value="C:\\Users\\ojhap\\workspace\\HAAutomation_Solution\\TestData_InputExcelFile"></parameter>
+		<parameter name="fileName" value="Test_5.xlsx"></parameter>
+		<parameter name="sheetName" value="TopPerf"></parameter>
+		<classes>
+			<class name="TestCode.DemoTestNG" />
+			<class name="TestCode.GiftLinksCheck">
+				<methods>
+					<include name="TopPerf" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+	<test name="Test_6">
+
+		<parameter name="browserName" value="chrome"></parameter>
+		<parameter name="filePath"
+			value="C:\\Users\\ojhap\\workspace\\HAAutomation_Solution\\TestData_InputExcelFile"></parameter>
+		<parameter name="fileName" value="Test_6.xlsx"></parameter>
+		<parameter name="sheetName" value="TopPerf"></parameter>
+		<classes>
+			<class name="TestCode.DemoTestNG" />
+			<class name="TestCode.GiftLinksCheck">
+				<methods>
+					<include name="TopPerf" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+	<test name="Test_7">
+
+		<parameter name="browserName" value="chrome"></parameter>
+		<parameter name="filePath"
+			value="C:\\Users\\ojhap\\workspace\\HAAutomation_Solution\\TestData_InputExcelFile"></parameter>
+		<parameter name="fileName" value="Test_7.xlsx"></parameter>
+		<parameter name="sheetName" value="TopPerf"></parameter>
+		<classes>
+			<class name="TestCode.DemoTestNG" />
+			<class name="TestCode.GiftLinksCheck">
+				<methods>
+					<include name="TopPerf" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+	<test name="Test_8">
+
+		<parameter name="browserName" value="chrome"></parameter>
+		<parameter name="filePath"
+			value="C:\\Users\\ojhap\\workspace\\HAAutomation_Solution\\TestData_InputExcelFile"></parameter>
+		<parameter name="fileName" value="Test_8.xlsx"></parameter>
+		<parameter name="sheetName" value="TopPerf"></parameter>
+		<classes>
+			<class name="TestCode.DemoTestNG" />
+			<class name="TestCode.GiftLinksCheck">
+				<methods>
+					<include name="TopPerf" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+	<test name="Test_9">
+
+		<parameter name="browserName" value="chrome"></parameter>
+		<parameter name="filePath"
+			value="C:\\Users\\ojhap\\workspace\\HAAutomation_Solution\\TestData_InputExcelFile"></parameter>
+		<parameter name="fileName" value="Test_9.xlsx"></parameter>
+		<parameter name="sheetName" value="TopPerf"></parameter>
+		<classes>
+			<class name="TestCode.DemoTestNG" />
+			<class name="TestCode.GiftLinksCheck">
+				<methods>
+					<include name="TopPerf" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+	<test name="Test_10">
+
+		<parameter name="browserName" value="chrome"></parameter>
+		<parameter name="filePath"
+			value="C:\\Users\\ojhap\\workspace\\HAAutomation_Solution\\TestData_InputExcelFile"></parameter>
+		<parameter name="fileName" value="Test_10.xlsx"></parameter>
+		<parameter name="sheetName" value="TopPerf"></parameter>
+		<classes>
+			<class name="TestCode.DemoTestNG" />
+			<class name="TestCode.GiftLinksCheck">
+				<methods>
+					<include name="TopPerf" />
+				</methods>
+			</class>
+
+		</classes>
+	</test> -->
+
+<!-- 	<test name="Test_11">
+
+		<parameter name="browserName" value="chrome"></parameter>
+		<parameter name="filePath"
+			value="C:\\Users\\ojhap\\workspace\\HAAutomation_Solution\\TestData_InputExcelFile"></parameter>
+		<parameter name="fileName" value="Test_11.xlsx"></parameter>
+		<parameter name="sheetName" value="TopPerf"></parameter>
+		<classes>
+			<class name="TestCode.DemoTestNG" />
+			<class name="TestCode.GiftLinksCheck">
+				<methods>
+					<include name="TopPerf" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>   -->
+</suite>

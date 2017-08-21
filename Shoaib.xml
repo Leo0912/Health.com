@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite guice-stage="DEVELOPMENT" name="TAAutomation" parallel="tests" thread-count="1">
+
+ <listeners>
+      
+      <listener class-name="UtilityFunctions.WebDriverListener"></listener>
+  </listeners>
+
+    <test name="TEST2">
+			   <parameter name="browserName" value="chrome"></parameter>
+				<parameter name="filePath" value="C:\\Kishore\\JavaWorkSpace\\HAAutomation_Solution\\TestData_InputExcelFile"></parameter>
+				<parameter name="fileName" value="kishore.xlsx"></parameter>
+				<parameter name="sheetName" value="TopPerf"></parameter>
+			  <classes>
+					<!--  <class name="TestCode.DemoTestNG"/> -->
+					<class name="TestCode.GiftLinksCheck">
+						<methods>
+						<include name="topPerformers" />
+						</methods>
+					</class>
+				  
+				</classes>
+		  </test>
+	 
+  </suite>

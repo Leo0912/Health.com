@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="11" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [TAAutomation]" parallel="tests">
+  <listeners>
+    <listener class-name="UtilityFunctions.WebDriverListener"/>
+  </listeners>
+  <test name="Test_1(failed)" parallel="tests">
+    <parameter name="fileName" value="Test_3.xlsx"/>
+    <parameter name="sheetName" value="TopPerf"/>
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="TestCode.GiftLinksCheck">
+        <methods>
+          <include name="BaseSetUp"/>
+          <include name="setUp"/>
+          <include name="topPerformers" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCode.GiftLinksCheck -->
+    </classes>
+  </test> <!-- Test_1(failed) -->
+</suite> <!-- Failed suite [TAAutomation] -->
